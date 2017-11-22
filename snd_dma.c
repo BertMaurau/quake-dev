@@ -32,6 +32,8 @@ void S_Update_();
 void S_StopAllSounds(qboolean clear);
 void S_StopAllSoundsC(void);
 
+void IN_Accumulate(void);
+
 // =======================================================================
 // Internal sound data & structures
 // =======================================================================

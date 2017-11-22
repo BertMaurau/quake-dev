@@ -384,7 +384,7 @@ void registerAllMemDrivers(void)
 
 void VID_InitMGLFull (HINSTANCE hInstance)
 {
-	int			i, xRes, yRes, bits, vMode, lowres, curmode, temp;
+	int			i, xRes, yRes, bits, lowres, curmode, temp;
 	int			lowstretchedres, stretchedmode, lowstretched;
     uchar		*m;
 
@@ -619,7 +619,6 @@ void VID_InitMGLDIB (HINSTANCE hInstance)
 {
 	WNDCLASS		wc;
 	HDC				hdc;
-	int				i;
 
 	hIcon = LoadIcon (hInstance, MAKEINTRESOURCE (IDI_ICON2));
 
@@ -710,7 +709,7 @@ VID_InitFullDIB
 void VID_InitFullDIB (HINSTANCE hInstance)
 {
 	DEVMODE	devmode;
-	int		i, j, modenum, cmodes, existingmode, originalnummodes, lowestres;
+	int		i, j, modenum, existingmode, originalnummodes, lowestres;
 	int		numlowresmodes, bpp, done;
 	int		cstretch, istretch, mstretch;
 	BOOL	stat;
