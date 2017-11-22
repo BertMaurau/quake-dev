@@ -1,7 +1,5 @@
-data/
-docs/
-kit/
-QuakeDev/.vs
-QuakeDev/x64
-QuakeDev/QuakeDev.VC.db
-QuakeDev/QuakeDev.VC.VC.opendb
+src/QuakeDev/.vs
+src/QuakeDev/x64
+src/QuakeDev/Debug
+src/QuakeDev/QuakeDev.VC.db
+src/QuakeDev/QuakeDev.VC.VC.opendb
