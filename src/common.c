@@ -1810,8 +1810,12 @@ void COM_InitFilesystem (void)
 			if ( !strcmp(COM_FileExtension(com_argv[i]), "pak") )
 			{
 				search->pack = COM_LoadPackFile (com_argv[i]);
-				if (!search->pack)
-					Sys_Error ("Couldn't load packfile: %s", com_argv[i]);
+				if (!search->pack) {
+					Sys_Error("Couldn't load packfile: %s", com_argv[i]);
+				}
+				else {
+					printf("packfile loaded: %s", com_argv[i]);
+				}
 			}
 			else
 				strcpy (search->filename, com_argv[i]);
