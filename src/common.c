@@ -20,6 +20,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // common.c -- misc functions used in client and server
 
 #include "quakedef.h"
+#include <windows.h>
+
 
 #define NUM_SAFE_ARGVS  7
 
@@ -1041,7 +1043,7 @@ void COM_CheckRegistered (void)
 	
 	Cvar_Set ("cmdline", com_cmdline);
 	Cvar_Set ("registered", "1");
-	static_registered = 1;
+	static_registered = 1
 	Con_Printf ("Playing registered version.\n");
 }
 
@@ -1694,6 +1696,8 @@ void COM_AddGameDirectory (char *dir)
 	char                    pakfile[MAX_OSPATH];
 
 	strcpy (com_gamedir, dir);
+
+	OutputDebugString(dir);
 
 //
 // add the directory to the search path

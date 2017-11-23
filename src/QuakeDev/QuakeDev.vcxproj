@@ -210,7 +210,7 @@
     <IncludePath>$(SolutionDir)..\scitech\INCLUDE;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\scitech\lib\win32\vc\;$(LibraryPath)</LibraryPath>
     <OutDir>.\Debug\</OutDir>
-    <IntDir>.\</IntDir>
+    <IntDir>.\Debug\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
