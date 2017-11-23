@@ -157,7 +157,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{87E925C1-B432-40F1-B480-704ACB37EC2A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>HandmadeQuake</RootNamespace>
+    <RootNamespace>QuakeDev</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -209,6 +209,8 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)..\scitech\INCLUDE;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\scitech\lib\win32\vc\;$(LibraryPath)</LibraryPath>
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
